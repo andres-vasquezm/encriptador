@@ -1,0 +1,20 @@
+main{
+    width: 100%;
+    background: black;
+    text-align: center;
+}
+
+
+.uno{
+    width: 40%;
+    height: 700px;
+    display: inline-block;
+    background: blanchedalmond;
+}
+
+.dos{
+    width: 40%;
+    height: 700px;
+    display: inline-block;
+    background: yellow;
+}
