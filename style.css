@@ -1,20 +1,90 @@
-main{
+body{
+    background:#f3f5fc;
+}
+
+h1{
+    background: #f3f5fc;
+}
+
+.contenido{
     width: 100%;
-    background: black;
-    text-align: center;
+    position: relative;
 }
 
 
-.uno{
-    width: 40%;
-    height: 700px;
-    display: inline-block;
-    background: blanchedalmond;
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
 }
 
-.dos{
-    width: 40%;
-    height: 700px;
+
+.entrada{
+    width: 65%;
+    height: 844px;
     display: inline-block;
-    background: yellow;
+    background: #f3f5fc;
+    position: relative;
+}
+
+.salida{
+    width: 400px;
+    height: 944px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid black;
+    margin-top: 40px;
+    border-radius: 32px;
+}
+
+.texto-usuario{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    top: 68px;
+    left: 240px;
+    border: none;
+    background: #f3f5fc;
+}
+
+.texto-usuario::placeholder{
+    font-weight: bold;
+    color: #0a3871;
+}
+
+.aviso{
+    position: absolute;
+    top: 711px;
+    left: 240px;
+}
+
+.botones{
+    position: absolute;
+    top: 745px;
+    left: 240px;
+}
+
+.encriptar{
+    width: 340px;
+    height: 67px;
+    border-radius: 25px;
+    color: #FFFFFF;
+    background: #0a3871;
+    border: none;
+    cursor: pointer;
+}
+
+.desencriptar{ 
+    width: 340px;
+    height: 67px;
+    margin-left: 8px;
+    border-radius: 25px;
+    color: #0a3871;
+    background: #d8dfe8;
+    border: 2px solid #0a3871;
+    cursor: pointer;
 }
