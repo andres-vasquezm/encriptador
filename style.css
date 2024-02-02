@@ -112,7 +112,7 @@ main{
 }
 
 .mensaje{
-    margin-top: 10px;
+    margin-top: 45px;
     font-size: 26px;
     font-weight: 800;
     color: #343A40;
@@ -128,17 +128,17 @@ main{
 
 .textareaSalida{
     width: 350px;
-    height: 48px;
+    height: 700px;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    resize: none;
-    word-wrap: break-word;
     border: none;
     position: absolute;
     top: 5px;
     background: white;
+    resize: none;
+    word-wrap: break-word;
 }
 
 .textareaSalida:focus{
@@ -156,9 +156,13 @@ main{
     margin-left: 8px;
     border-radius: 25px;
     color: #0a3871;
-    background: #d8dfe8;
+    background: #FFFFFF;
     border: 2px solid #0a3871;
     cursor: pointer;
     position: relative;
     top: 845px;
+}
+
+.botonCopiar:hover{
+    background: #d8dfe8;
 }
