@@ -1,15 +1,4 @@
-//Expandir textarea
-function ajustarAltura(textareaId) {
-    let textarea = document.getElementById(textareaId);
-    textarea.oninput = function() {
-        textarea.style.height = '';
-        textarea.style.height = Math.min(textarea.scrollHeight, 700) + 'px';
-    };
-}
-//Automatiza el movimiento del textarea de ingreso de texto hacia abajo
-ajustarAltura('textareaEntrada');
-
-
+//Limpiar texto
 function limpiarCaja(idElemnto){
     document.querySelector(idElemnto).value = '';
 }

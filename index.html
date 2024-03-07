@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
@@ -11,31 +11,35 @@
 <body>
     <header>
         <div class="posicion-logo">
-            <img class="logo" src="img/logo.png" alt="">
+            <img class="img-logo" src="img/logo.png" alt="">
         </div>
     </header>
-    <main class="layout">
+    <main class="container">
         <div class="entrada">
-            <textarea id="textareaEntrada" cols="30" class="texto-usuario" rows="10" placeholder="Ingrese texto aqui"></textarea>
-            <p class="aviso">&#9888 Solo letras minúsculas y sin acento</p>
+            <textarea id="textareaEntrada" cols="30" class="texto-usuario" rows="10" placeholder="Ingrese texto aqui"></textarea>    
+            <div class="condicion">
+                <p>🚫 Solo letras minúsculas y sin acento</p>
+            </div>
             <div class="botones">
-                <button class="encriptar" onclick="encriptarTexto();">Encriptar</button>
-                <button class="desencriptar" onclick="desencriptarTexto()"> Desencriptar</button>
+                <button class="btn-encriptar" onclick="encriptarTexto();">🔒 Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencriptarTexto()">🔓 Desencriptar
+                </button>
             </div>
         </div>
         <div class="salida">
             <div class="informacion" id="info">
-                <img class="muñeco"  src="img/Muñeco.png" alt="muñeco">
-                <h1 class="mensaje">Ningún mensaje fue encontrado</h1>
-                <p class="texto">Ingresa el texto que deseas encrptar o desencriptar</p>
+                <img class="muñeco" id="imagen"  src="img/Muñeco.png" alt="muñeco">
+                <h1 id="mensaje">Ningún mensaje fue encontrado</h1>
+                <p id="texto">Ingresa el texto que deseas encrptar o desencriptar</p>
             </div>
             <div class="infoCopiar" id="informacionEncriptada">
                 <textarea class="textareaSalida" id="infoSalida" cols="30" rows="10"></textarea>
                 <button class="botonCopiar" id="infoSalida" onclick="copiarTexto()"> Copiar </button>
             </div>
+            </div>
         </div>
     </main>
-    <footer>
+    <footer class="final">
         
     </footer>
     <script src="app.js"></script>
